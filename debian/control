@@ -1,0 +1,11 @@
+Source: test-dpkg-repo
+Section: test-dpkg-repo
+Priority: optional
+Maintainer: Example User <user@example.org>
+Standards-Version: 4.0.0
+Build-Depends: debhelper (>=10)
+
+Package: test-dpkg-repo
+Architecture: any
+Depends: ${shlibs:Depends}, git
+Description: Example Project

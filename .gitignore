@@ -1,0 +1,5 @@
+test-dpkg-repo
+*.substvars
+debhelper-build-stamp
+ ./debian/.debhelper
+ ./debian/test-dpkg-repo
