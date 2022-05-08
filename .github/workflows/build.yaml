@@ -16,3 +16,8 @@ jobs:
       - name: Build package
         run: make package
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "*.deb/*.txt"
+          bodyFile: "body.md"
+          token: ${{ secrets.GITHUB_TOKEN }}
