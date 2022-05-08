@@ -2,7 +2,7 @@ name: Build
 on: [push]
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
@@ -16,8 +16,3 @@ jobs:
       - name: Build package
         run: make package
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - uses: ncipollo/release-action@v1
-        with:
-          artifacts: "*.deb/*.txt"
-          bodyFile: "body.md"
-          token: ${{ secrets.GITHUB_TOKEN }}
