@@ -3,3 +3,4 @@ test-dpkg-repo
 debhelper-build-stamp
  ./debian/.debhelper
  ./debian/test-dpkg-repo
+ *.deb
