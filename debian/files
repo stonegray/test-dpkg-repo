@@ -1,0 +1,2 @@
+test-dpkg-repo-dbgsym_0.0.1_amd64.ddeb debug optional automatic=yes
+test-dpkg-repo_0.0.1_amd64.deb test-dpkg-repo optional
