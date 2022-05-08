@@ -13,5 +13,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: Build package
-      - run: make package
+        run: make package
       - run: echo "🍏 This job's status is ${{ job.status }}."
