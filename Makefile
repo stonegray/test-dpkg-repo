@@ -8,3 +8,5 @@ package:
 	@dpkg-buildpackage -uc -us -ui
 	@dpkg-deb --build --root-owner-group debian/test-dpkg-repo .
 
+clean:
+	@rm test-dpkg-repo
