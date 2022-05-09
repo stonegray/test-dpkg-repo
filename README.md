@@ -1,4 +1,6 @@
 # test-dpkg-repo
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/stonegray/test-dpkg-repo/Build)
+
 Example DPKG for testing CI/CD integration. Generates a single binary (`test-dpkg-repo`) which is installed to /usr/bin and echos hello world, and installs a `flag.txt` into etc. 
 
 ## Usage:
